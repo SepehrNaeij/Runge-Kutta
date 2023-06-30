@@ -4,4 +4,10 @@ The Runge-Kutta method is a numerical technique used to solve ordinary different
 </br> The 4th order Runge-Kutta (RK4) method is a popular and commonly used method that gives approximate solutions to ODEs. It can only solve first order ODEs or higher order ODEs that are reduced to first order.
 The RK4 method provides the approximate value of y for a given point x.</br> The formula for the fourth-order Runge-Kutta method is given by:
 $\color{green}{y1 = y0 + (⅙) (k1 + 2k2 + 2k3 + k4).}$
-Here, k1, k2, k3, and k4 are slopes at different points in the interval $\color{orange}{[x0, xn]}$ and h is the step size.
+Here, k1, k2, k3, and k4 are slopes at different points in the interval $\color{orange}{[x0, xn]}$ and h is the step size.</br></br>
+The formula basically computes next value yn+1 using current yn plus weighted average of four increments.</br> 
+
++ k1 is the increment based on the slope at the beginning of the interval, using y
++ k2 is the increment based on the slope at the midpoint of the interval, using y + hk1/2.
++ k3 is again the increment based on the slope at the midpoint, using  y + hk2/2.
++ k4 is the increment based on the slope at the end of the interval, using y + hk3.
