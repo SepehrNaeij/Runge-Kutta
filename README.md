@@ -9,7 +9,7 @@ The formula basically computes next value $\color{green}{Yn+1}$ using current $\
 
 + $\color{orange}{k1}$ is the increment based on the slope at the beginning of the interval, using $\color{green}{y}$
 + $\color{orange}{k2}$ is the increment based on the slope at the midpoint of the interval, using $\color{green}{y + (1/2)hk1}$
-+ $\color{orange}{k3}$ is again the increment based on the slope at the midpoint, using  y + hk2/2.
-+ $\color{orange}{k4}$ is the increment based on the slope at the end of the interval, using y + hk3.</br></br>
++ $\color{orange}{k3}$ is again the increment based on the slope at the midpoint, using $\color{green}{y + (1/2)hk2}$
++ $\color{orange}{k4}$ is the increment based on the slope at the end of the interval, using $\color{green}{y + hk3}$</br></br>
 In addition of above descriptions i should to say that after finding the $\color{green}{Yn}$ in this code,a Secondary Axis will be drawn and show to you the 2D coordinates of them clearly.</br>
 I wrote this code with $\color{yellow}{Turtle}$ Library in python.
